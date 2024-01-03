@@ -1,0 +1,60 @@
+@keyframes colorido {
+  0% {
+    color: #12f700;
+    border-color: #12f700;
+  }
+  25% {
+    color: #00ffff;
+    border-color: #00ffff;
+  }
+  50% {
+    color: #0000ff;
+    border-color: #0000ff;
+  }
+  51% {
+    color: #0000ff;
+    border-color: #0000ff;
+  }
+  75% {
+    color: #00ffff;
+    border-color: #00ffff;
+  }
+  100% {
+    color: #12f700;
+    border-color: #12f700;
+  }
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+  font-family: Helvetica, sans-serif;
+}
+
+.container-relogio {
+  /* height: 100vh; */
+  /* width: 100%; */
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.clock {
+  font-size: 5rem;
+  font-weight: bold;
+  color: #12f700;
+  text-align: center;
+  border: 2px solid #12f700;
+  border-radius: 1rem;
+  padding: 2rem 3rem;
+  height: 80px;
+  display: flex;
+  align-items: center;
+
+  animation: colorido 5s infinite linear;
+}
+
+.clock span {
+  margin-right: 0.5rem;
+}
